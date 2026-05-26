@@ -211,7 +211,7 @@ export function tui(input: {
                   <ToastProvider>
                     <RouteProvider
                       initialRoute={
-                        input.args.continue
+                        input.args.continue && !input.args.fork
                           ? {
                               type: "session",
                               sessionID: "dummy",
